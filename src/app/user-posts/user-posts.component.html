@@ -1,0 +1,20 @@
+IME KORISNIKA:<input ([ngModel])="imeKorisnika">
+<br>
+KORISNICKO IME:<input ([ngModel])="korisnickoIme">
+<button (click)="DodajKorisnika()">Dodaj korisnika</button>
+
+<table (click)="metoda()">
+    <th colspan="3">
+        <h2>LISTA KORISNIKA</h2>
+    </th>
+    <tr>
+        <th>Ime</th>
+        <th>Username</th>
+        <th>Godina</th>
+    </tr>
+    <tr *ngFor="let x of user_list">
+        <td>{{ x.name }}</td>
+        <td>{{ x.username }}</td>
+        <td>{{ x.age }}</td>
+    </tr>
+</table>
